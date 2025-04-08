@@ -1,11 +1,48 @@
 package miPrincipal;
+import fecha.*;
 
 public class Principal {
-    public String getGreeting() {
-        return "Hello World!";
-    }
-
+    
     public static void main(String[] args) {
-        System.out.println(new Principal().getGreeting());
+        Animal []animales = new Animal[4];
+        animales[0]= new Animal();
+        animales[1]= new Perro();
+        animales[2] = new Gato();
+        animales[3] = new Pajaro();
+
+        int arreglo[] = new int[2]; //creando un arreglo de enteros
+        arreglo[0]=2;
+        //arreglo[1]= "Maria";
+        //arreglo[1]=5.1; No es posible
+        arreglo[1]=(int)5.1;
+
+        for (int i=0; i<animales.length;){
+            animales[i++].hacerSonido();
+        }
+
+        Animal animal1 ;
+        Perro perro1 = new Perro();
+        animal1 = perro1;
+        //perro1 = animal1; no es posible
+        perro1 = (Perro)animal1;
+
+        Fecha fec = new FechaDetallada(25,2,2009);
+        Object obj = new FechaDetallada("3/12/2008");
+
+        System.out.println("fec="+fec); //invoca al constructor de fec
+        System.out.println(("obj="+obj));
+
+        //crear un arreglo de objetos tipo Object
+
+        Object arr[] = { new Fecha("2/10/1970"),
+                         new FechaDetallada(23,12,1948),
+                         new String("Esto es una cadena"),
+                         new Integer(34) };
+                         
+        MuestraConjunto.mostrar(arr);
+         
+
     }
+       
+
 }
