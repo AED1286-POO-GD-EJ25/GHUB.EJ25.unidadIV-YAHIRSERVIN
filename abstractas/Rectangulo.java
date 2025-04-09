@@ -19,6 +19,10 @@ package abstractas;
             this.base = b;
             this.altura = h;
         }
+       
+        public double area(){
+            return base * altura;
+        }
 
 
     }

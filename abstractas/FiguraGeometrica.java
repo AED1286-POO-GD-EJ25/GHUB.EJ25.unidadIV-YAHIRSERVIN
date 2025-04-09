@@ -6,11 +6,11 @@ package abstractas;
         protected double x;
         protected double y;
         //CONSTRUCTOR
-        public FiguraGeoetrica (){
+        public FiguraGeometrica (){
             x = 0;
             y = 0;
         }
-        public FiguraGeoetrica (double x, double y){
+        public FiguraGeometrica (double x, double y){
             this.x = x;
             this.y = y;
         }
