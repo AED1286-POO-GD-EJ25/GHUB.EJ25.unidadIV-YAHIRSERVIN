@@ -16,13 +16,13 @@ package abstractas;
             this.x = x;
             this.y = y;
         }
-        public FiguraGeomtrica(String nom){
+        public FiguraGeometrica(String nom){
             this.nombre = nom;
         }
         //METODOS ABSTRACTOS
         public abstract double area();
         //METODO CONCRETOS
-        public static double areaPromedio(FiguraGeometrica arr[])]{
+        public static double areaPromedio(FiguraGeometrica arr[]){
             double suma = 0;
             for(int i = 0; i < arr.length; i++){
                 suma = suma + arr[i].area();

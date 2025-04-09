@@ -1,6 +1,9 @@
 package miPrincipal;
 import fecha.*;
 import abstractas.*;
+import abstractas.Circulo;
+import abstractas.Rectangulo;
+import abstractas.Triangulo;
 
 public class Principal {
     
@@ -49,6 +52,16 @@ public class Principal {
         System.out.println(c);
         System.out.println(r);
         System.out.println(t);
+
+        FiguraGeometrica arrFiguras[] = {
+            new Circulo(23),
+            new Rectangulo(10,20),
+            new Triangulo(5,10),
+        };
+
+
+
+        double prom = FiguraGeometrica.areaPromedio(arrFiguras);
 
     }
  
