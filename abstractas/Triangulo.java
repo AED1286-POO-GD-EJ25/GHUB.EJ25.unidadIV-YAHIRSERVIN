@@ -6,12 +6,11 @@ public class Triangulo extends FiguraGeometrica {
     private double altura;
     //CONSTRUCTOR
     public Triangulo(){
-        super();
-        this.base = 0;
-        this.altura = 0;
+        super("Triangulo");
+        
     }
     public Triangulo(double b, double h){
-        super();
+        super("Triangulo");
         this.base = b;
         this.altura = h;
     }

@@ -6,11 +6,11 @@ package abstractas;
         private double altura;
         //CONSTRUCTOR
         public Rectangulo(){
-            super();
+            super("Rectangulo");
             
         }
         public Rectangulo(double b, double h){
-            super();
+            super("Rectangulo");
             this.base = b;
             this.altura = h;
         }

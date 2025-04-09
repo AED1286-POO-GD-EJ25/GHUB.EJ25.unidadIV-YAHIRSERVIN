@@ -5,26 +5,19 @@ public class Circulo extends FiguraGeometrica {
     private double radio;
     //CONSTRUCTOR
     public Circulo(){
-        super();
-        this.radio = 0;
-    }
+        
+    }  
     public Circulo(double r){
-        super();
+        super("Circulo");
         this.radio = r;
     }
     public Circulo(double x, double y, double r){
-        super(x,y);
+        super("Circulo");
         this.radio = r;
     }
     
-    public double area(){
-        return Math.PI * radio * radio;
-    }
-    public String toString(){
-        return super.toString() + "\nRadio: " + radio;
-    }
-    public double getRadio() {
-        return radio;
-    } 
+   public double calcularArea(){
+        return Math.PI * Math.pow(radio,2);
+   }
     
 }
