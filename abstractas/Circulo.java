@@ -1,12 +1,11 @@
 package abstractas;
-public class Circulo extends FiguraGeometrica {
-    
-    //ATRIBUTOS
+public class Circulo extends FiguraGeometrica{
+    //atributos
     private double radio;
-    //CONSTRUCTOR
+    //constructores
     public Circulo(){
-        
-    }  
+        super();
+    }
     public Circulo(double r){
         super("Circulo");
         this.radio = r;
@@ -15,9 +14,7 @@ public class Circulo extends FiguraGeometrica {
         super("Circulo");
         this.radio = r;
     }
-    
-   public double calcularArea(){
+    public double area(){
         return Math.PI * Math.pow(radio,2);
-   }
-    
+    }
 }

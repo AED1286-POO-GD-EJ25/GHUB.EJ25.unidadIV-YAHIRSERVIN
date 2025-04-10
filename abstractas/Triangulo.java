@@ -1,13 +1,11 @@
 package abstractas;
-public class Triangulo extends FiguraGeometrica {
-    
-    //ATRIBUTOS
+public class Triangulo extends FiguraGeometrica{
+    //atributos
     private double base;
     private double altura;
-    //CONSTRUCTOR
+    //contructores
     public Triangulo(){
         super("Triangulo");
-        
     }
     public Triangulo(double b, double h){
         super("Triangulo");
@@ -18,10 +16,10 @@ public class Triangulo extends FiguraGeometrica {
         super(x,y);
         this.base = b;
         this.altura = h;
+
     }
-    
+
     public double area(){
-        return (base * altura) / 2;
+        return base*altura/2;
     }
-    
 }
