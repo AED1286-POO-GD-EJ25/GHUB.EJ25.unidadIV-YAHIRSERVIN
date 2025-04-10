@@ -4,6 +4,9 @@
 ./miPrincipal/Pajaro.java
 ./miPrincipal/Principal.java
 ./miPrincipal/Animal.java
+./Interfaces/Dog.java
+./Interfaces/Pet.java
+./Interfaces/Animal.java
 ./miTest/AppTest.java
 ./abstractas/Circulo.java
 ./abstractas/Rectangulo.java
