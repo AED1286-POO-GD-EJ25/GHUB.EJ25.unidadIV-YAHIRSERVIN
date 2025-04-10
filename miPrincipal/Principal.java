@@ -1,9 +1,9 @@
 package miPrincipal;
 import fecha.*;
-import abstractas.*;
 import abstractas.Circulo;
 import abstractas.Rectangulo;
 import abstractas.Triangulo;
+import abstractas.FiguraGeometrica;
 
 public class Principal {
     
@@ -44,27 +44,38 @@ public class Principal {
                          new Integer(34) };
                          
         MuestraConjunto.mostrar(arr);
-         
-        Circulo c = new Circulo(3,0);
-        Rectangulo r = new Rectangulo(10,5,21,11);
+
+        //probar las clases Abstractas
+
+        Circulo c = new Circulo(3.0);
+        Rectangulo r = new Rectangulo(10.5,21.11);
         Triangulo t = new Triangulo(2,4);
 
         System.out.println(c);
         System.out.println(r);
         System.out.println(t);
+        
+        FiguraGeometrica arreglo2[] = {
+                                        new Circulo(23),
+                                        new Rectangulo(12,4),
+                                        new Triangulo(2,5)
+                                     };
+        double prom = FiguraGeometrica.areaPromedio(arreglo2);
 
-        FiguraGeometrica arrFiguras[] = {
-            new Circulo(23),
-            new Rectangulo(10,20),
-            new Triangulo(5,10),
-        };
+        System.out.println("Promedio = "+prom);
 
 
 
-        double prom = FiguraGeometrica.areaPromedio(arrFiguras);
+        
+        
+
+       
+
+
+         
 
     }
- 
+       
 
 }
        
