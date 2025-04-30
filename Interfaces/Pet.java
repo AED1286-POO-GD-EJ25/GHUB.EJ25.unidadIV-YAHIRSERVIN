@@ -1,5 +1,5 @@
-package Interfaces;
-public interface Pet extends Animal {
-    void play();
+package interfases;
+public interface Pet extends Animal{
     
+
 }

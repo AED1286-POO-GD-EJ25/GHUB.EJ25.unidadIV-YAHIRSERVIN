@@ -1,3 +1,16 @@
+./desacoplar/PalomaMensajera.java
+./desacoplar/MiAplicacionDeMensajes.java
+./desacoplar/Comunicador.java
+./desacoplar/TelefonoCelular.java
+./desacoplar/Telegrafo.java
+./desacoplar/Alumno.java
+./desacoplar/Ave.java
+./desacoplar/Reliquia.java
+./desacoplar/Paloma.java
+./desacoplar/Telefono.java
+./desacoplar/ComunicadorManager.java
+./genericidad/Caja.java
+./genericidad/Utilidades.java
 ./miPrincipal/Gato.java
 ./miPrincipal/Perro.java
 ./miPrincipal/MuestraConjunto.java
